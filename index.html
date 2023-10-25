@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Project Template</title>
+    <title>Frontendmentor Challenge: Stats preview card component</title>
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./dist/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
 </head>
 
 <body
-    class="relative flex items-center justify-center min-h-screen text-slate-950 bg-gradient-to-br from-slate-100 dark:from-slate-700 to-slate-300 dark:to-slate-900 dark:text-slate-50">
+    class="relative flex items-center justify-center min-h-screen text-slate-950 bg-gradient-to-br from-slate-100 dark:from-purple-700 to-purple-300 dark:to-purple-950 dark:text-slate-50 font-body">
     <!-- Ron's basic template for iCodeThis challenges -->
     <!-- Background -->
     <div
@@ -73,8 +79,41 @@
     </button>
     <!-- Template END -->
 
-    <main class="z-10 w-full max-w-xl shadow-xl bg-slate-100 dark:bg-slate-900">
-        <span>Main content here</span>
+    <main
+        class="z-10 flex flex-col w-full max-w-screen-md m-4 overflow-hidden rounded-lg shadow-xl sm:flex-row bg-slate-100 dark:bg-slate-900">
+        <div class="relative sm:order-1 sm:w-1/2">
+            <picture class="block w-full h-full before:bg-purple-600/50 before:absolute before:inset-0 before:block">
+                <source media="(min-width: 640px)" srcset="./images/image-header-desktop.jpg">
+                <source srcset="./images/image-header-mobile.jpg">
+                <img class="block object-cover w-full h-full" src="./images/image-header-mobile.jpg"
+                    alt="Three women are diligently working: one is engrossed in her phone, chuckling at something to her right, while the other is focused on her laptop.">
+            </picture>
+        </div>
+
+        <div class="flex flex-col justify-center sm:p-10 sm:w-1/2">
+            <div class="w-full p-8 text-center sm:mb-10 sm:p-0 sm:text-left">
+                <h2 class="mb-4 text-2xl font-bold sm:text-3xl font-title">Get <span
+                        class="text-purple-600">insights</span> that
+                    help
+                    your business grow.</h2>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Discover the benefits of data analytics and make
+                    better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            </div>
+            <div class="flex flex-col gap-6 mb-8 text-center sm:gap-8 sm:mb-0 sm:flex-row sm:text-left">
+                <div class="flex flex-col">
+                    <p class="text-xl font-bold font-title">10k+</p>
+                    <p class="text-xs uppercase text-slate-600 dark:text-slate-400">companies</p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-xl font-bold font-title">314</p>
+                    <p class="text-xs uppercase text-slate-600 dark:text-slate-400">Templates</p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-xl font-bold font-title">12M+</p>
+                    <p class="text-xs uppercase text-slate-600 dark:text-slate-400">Queries</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Credits -->
