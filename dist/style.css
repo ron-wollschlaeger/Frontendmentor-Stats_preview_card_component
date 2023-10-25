@@ -1018,6 +1018,34 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (max-width: 450px) {
+  .max-\[450px\]\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 450px) {
+  .min-\[450px\]\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .min-\[450px\]\:flex-row {
+    flex-direction: row;
+  }
+
+  .min-\[450px\]\:gap-8 {
+    gap: 2rem;
+  }
+
+  .min-\[450px\]\:gap-12 {
+    gap: 3rem;
+  }
+
+  .min-\[450px\]\:text-left {
+    text-align: left;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:order-1 {
     order: 1;
@@ -1037,6 +1065,10 @@ html {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
 
   .sm\:justify-between {
